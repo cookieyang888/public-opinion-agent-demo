@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.*
+
+# build
+dist/
+.next/
+.vinext/
+out/
+
+# cache
+.vite-cache/
+.wrangler/
+
+# environment
+.env
+.env.*
+*.pem
+
+# system
+.DS_Store
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
