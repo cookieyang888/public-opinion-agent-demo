@@ -93,7 +93,6 @@ function StatusAwareTaskCenter({role,chat,setChat,flash}:{role:'舆情部'|'事�
     </section>
     <section className="panel conversation">
       <div className="conversationHead"><div><h2>{current.title}</h2><p>任务 {current.id} · <span>{status}</span></p></div><button onClick={()=>flash('任务详情已展开')}>···</button></div>
-      <div className="taskOrigin"><span>{initiator}发起 · {receiver}接收</span><p>{status==='协商中'?'双方正在协商处理方式':status==='已完成'?'处理方案已确认，任务已完成':'尚未进入协商'}</p></div>
       <div className="context"><div><span>事件性质<strong>{current.nature}</strong></span><span>传播量<strong>{current.heat}</strong></span><span>事业部<strong>{current.dept}</strong></span></div><a>查看事件详情 ›</a></div>
       <div className="messages"><p className="day">今天</p><div className="message"><i>{fromName[0]}</i><div><p>{fromName}　10:32</p><span>{initiateText}</span></div></div><div className="message mine"><i>{toName[0]}</i><div><p>{toName}　10:38</p><span>{replyText}</span></div></div>{status==='协商中'&&<div className="dialogueNotice">双方可继续补充信息，确认后结束协商</div>}{status==='已完成'&&<div className="dialogueNotice distributedNotice"><b>✓ 协商任务已完成</b><span>责任媒介：王晨　·　处理动作：评论引导 + 持续监测　·　完成时间：今日 11:20</span></div>}</div>
       <div className="quickActions"><button onClick={()=>status==='已完成'?flash('处理结果已展开'):setChat('补充说明：请结合当前传播情况确认最终处理方式。')}>{status==='已完成'?'查看处理结果':'＋ 补充协商意见'}</button><button onClick={()=>flash('已打开对接人列表')}>⇄ 更换对接人</button></div>
