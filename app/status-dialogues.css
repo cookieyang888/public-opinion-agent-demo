@@ -1,0 +1,17 @@
+.statusAware .taskMeta{display:flex;align-items:center;justify-content:space-between}
+.statusChip{display:inline-flex;align-items:center;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700}
+.statusChip.negotiating{color:#1d5fd1;background:#e9f1ff}
+.statusChip.waiting{color:#9a6500;background:#fff4d6}
+.statusChip.distributed{color:#087a55;background:#e3f7ef}
+.statusChip.notStarted{color:#64748b;background:#eef2f6}
+.dialogueNotice{align-self:center;max-width:82%;margin:8px auto;padding:10px 16px;border:1px solid #d9e3f3;border-radius:10px;background:#f7f9fc;color:#64748b;font-size:13px;text-align:center}
+.waitingNotice{border-style:dashed;background:#fffaf0;color:#8b681d}
+.distributedNotice{display:flex;flex-direction:column;gap:5px;border-color:#bce9d6;background:#edf9f4;color:#126b4f;text-align:left}
+.distributedNotice b{font-size:14px}
+.distributedNotice span{color:#4e7467;line-height:1.55}
+.monitorWithoutAgent{grid-template-columns:minmax(0,1fr)}
+.editablePool select{min-width:118px;border:1px solid #dce3ed;border-radius:7px;background:#fff;padding:8px 9px;color:#334155;font-size:11px}
+.eventLink{display:block;border:0;background:transparent;padding:0;color:#20304a;font:inherit;font-weight:700;text-align:left;text-decoration:underline;text-decoration-color:#9eb2d5;text-underline-offset:4px;cursor:pointer}
+.eventLink:hover{color:#2468e8;text-decoration-color:#2468e8}
+.rowAction{white-space:nowrap;border:1px solid #bcd0f7;border-radius:6px;background:#f5f8ff;color:#2b66d4;padding:7px 9px;font-size:10px;cursor:pointer}
+@media(max-width:1050px){.monitorWithoutAgent{grid-template-columns:1fr}}

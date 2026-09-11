@@ -4,6 +4,7 @@ import './globals.css';
 import './role-panels.css';
 import './workflow-updates.css';
 import './task-center.css';
+import './status-dialogues.css';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
